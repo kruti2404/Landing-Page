@@ -1,0 +1,382 @@
+:root {
+  --second-color: #010a43;
+  --first-color: #ffc2c2;
+  --font: "Tinos", serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  overflow: hidden;
+}
+
+body {
+  font-variant: small-caps;
+}
+
+.Header {
+  position: fixed;
+  width: 100%;
+  color: var(--second-color);
+  background-color: var(--first-color);
+  padding: 1rem;
+  z-index: 1000;
+  top: 0;
+}
+
+.nav {
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.div-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  font-size: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--second-color);
+}
+.nav-link:hover{
+  font-size: 2.2rem;
+    text-decoration: underline;
+  
+}
+.nav-item :hover {
+  font-size: 1.8rem;
+  margin-left: 25px;
+  margin-top: -10px;
+  margin-right: 25px;
+  text-decoration: underline;
+}
+
+.cart_icon {
+  font-size: 2.5rem;
+  margin-right: 2rem;
+  color: var(--second-color);
+}
+
+#icons:hover {
+  font-size: 3.29rem;
+}
+
+#icons {
+  padding: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--second-color);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 765px) {
+  .div-menu {
+    color: var(--first-color);
+    display: none;
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--second-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .div-menu.show {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+  .nav-link {
+    color: var(--first-color);
+  }
+
+  .nav-link:hover {
+    font-size: 2.2rem;
+    text-decoration: underline;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .cart_icon {
+    color: var(--second-color);
+    align-self: flex-end;
+  }
+}
+
+/* Tablet and desktop styles */
+@media screen and (min-width: 766px) {
+  .div-menu {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: row;
+  }
+
+  .nav-item {
+    margin-left: 20px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.main-content {
+  background-color: var(--first-color);
+  margin-top: 5.5rem;
+  height: calc(100% - 5.5rem);
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  margin-bottom: -8rem;
+  height: 100%;
+}
+
+.main-title {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  color: var(--second-color);
+}
+
+#image img {
+  margin-left: 5rem;
+  display: block;
+  max-width: 150%;
+  max-height: 80%;
+  flex: 1;
+}
+
+.Intro {
+  text-align: center;
+  margin-left: 5rem;
+  align-items: center;
+  flex: 1;
+  display: block;
+  overflow: hidden;
+  font-size: 2rem;
+  color: var(--second-color);
+}
+.Collections {
+  background-color: var(--first-color);
+  color: var(--second-color);
+  padding: 2rem;
+}
+
+.Collections h1 {
+  margin: 1rem;
+  font-size: 2.8rem;
+  text-decoration: underline;
+  text-align: left;
+  width: 100%;
+}
+
+.collection.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.item2,
+.item3 {
+  display: inline-flex;
+  margin: 0.9rem 2rem;
+  background-color: var(--second-color);
+}
+#collection-Content {
+  display: flex;
+  transition: 0.5s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+#collection-Content h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--first-color);
+}
+#collection-Content h1::after {
+  font-size: 3rem;
+}
+#collection-Content h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: var(--first-color);
+}
+
+#collection-Content ion-icon {
+  font-size: 5rem;
+  color: var(--first-color);
+  margin: 10px 0;
+}
+#collection-Content h2:hover {
+  font-size: 3rem;
+}
+#collection-Content ion-icon:hover {
+  font-size: 6rem;
+}
+
+.contact {
+  color: var(--first-color);
+  padding-bottom: 10px;
+  margin-top: 0;
+  padding-top: -1rem;
+  padding-left: 1rem;
+  background-color: var(--second-color);
+  margin-bottom: -25px;
+}
+
+.Heading-contact {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-decoration: underline;
+  font-size: 2.5rem;
+  color: var(--second-color);
+}
+.grid-container1 {
+  margin-top: -2rem;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.grid-items {
+  padding: 0;
+  margin: 0 0.1rem;
+  color: var(--first-color);
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  transition: 0.5s;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.grid-items h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.grid-items p {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.social-Icons ion-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+.social-Icons ion-icon:hover {
+  font-size: 2.5rem;
+}
+
+.inBox {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.inBox input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: #010a43;
+  background-color: var(--first-color);
+  margin-right: 1rem;
+}
+.inBox ion-icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.inBox ion-icon:hover {
+  font-size: 2.2rem;
+}

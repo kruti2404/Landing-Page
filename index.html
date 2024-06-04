@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey Fashion</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="Header" id="Header">
+        <nav class="nav bd-grid" >
+            <button class="menu-toggle" id="menu-toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <ion-icon name="glasses-outline"></ion-icon>
+                </div>
+                <a href="#main-content" class="logo-text">Hey Fashion</a>
+            </div>
+
+            <div class="div-menu" id="nav-menu">
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item"><a href="#main-content" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#Collections" class="nav-link">Collections</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="cart_icon">
+                <ion-icon id="icons" name="search-outline"></ion-icon>
+                <ion-icon id="icons" name="person-outline"></ion-icon>
+                <ion-icon id="icons" name="cart-outline"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+        <h4 class="main-title">Welcome to Hey Fashion – your ultimate destination for all things style!</h4>
+
+        <div class="container">
+            <div id="image">
+                <img src="images/img-home.jpg" alt="" srcset="">
+            </div>
+            <div class="Intro">
+
+                <p>
+                    Our collection features a range of stylish and versatile outfits perfect for any casual occasion.
+                    From breezy kurtas to comfy palazzos, each piece is crafted with care and attention to detail. We
+                    use high-quality fabrics that are breathable and easy to care for, ensuring that you look and feel
+                    your best all day long.
+                </p>
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="Collections" id="Collections">
+
+            <h1>Collections</h1>
+
+            <div class="collection items">
+
+
+                <div class="grid-container">
+                    <div class="grid-item item1">
+                        <img src="images/mens.jpg" alt="Image 1">
+                    </div>
+                    <div class="grid-item item2" id="collection-Content">
+                        <h1>mens Collections</h1>
+                        <h2>Shop Now</h2>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+
+
+                    </div>
+                    <div class="grid-item item3" id="collection-Content">
+                        <h1>Womens Collections</h1>
+
+                        <h2>Shop Now</h2>
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+
+
+                    </div>
+                    <div class="grid-item item4">
+                        <img src="images/women2.jpg" alt="Image 2">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <h1 class="Heading-contact">Contact Us</h1>
+
+        <div class="contact" id="contact">
+            <!-- <h1 class="contacthead">Contact Us</h1> -->
+            <div class="grid-container1">
+                <div class="grid-items">
+                    <h2>Hey Fashion</h2>
+                    <p>A modern Western wear brand for the new generation. From chic clothing to trendy glasses and accessories, we embody contemporary style with innovative designs. Crafted from premium materials, our collections blend fashion with comfort for those who seek both.</p>
+                </div>
+                <div class="grid-items" id="get In touch">
+                    <h2>Get in Touch</h2>
+                    <p>Email: <a href="mailto:support@heyfashion.com">support@heyfashion.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                    <p>Address: 123 Fashion St, Style City, FS 12345</p>
+                </div>
+                <div class="grid-items" id="socialmedia">
+                    <h2>Social Media Links </h2>
+                    <div class="social-Icons">
+                       <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </div>
+                </div>
+                <div class="grid-items" id="newsLetter">
+                    <h2>NewsLetter </h2>
+                    <p>Subscribe to be the first to hear about our exclusive offers and latest arrivals.</p>
+                    <div class="inBox">
+                        <input type="text"><ion-icon name="mail-unread-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
